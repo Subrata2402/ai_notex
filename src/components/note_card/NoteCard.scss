@@ -1,0 +1,79 @@
+.note-card {
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 0 0.5rem 0.1rem var(--border-color);
+    background-color: var(--grey-240);
+  }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .date-time {
+      color: var(--grey-200);
+      font-weight: 600;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+
+      .dot {
+        height: 0.25rem;
+        width: 0.2rem;
+        background-color: var(--grey-200);
+        margin: auto 0.3rem;
+        border-radius: 50%;
+      }
+    }
+
+    audio {
+      display: none;
+    }
+
+    .audio-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: var(--grey-240);
+      line-height: normal;
+      padding: 0.3rem 0.5rem;
+      color: var(--text-color);
+      border-radius: 1rem;
+    }
+  }
+
+  .card-title {
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+
+  .card-body {
+    color: var(--grey-100);
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: justify;
+  }
+
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .card-image {
+      background-color: var(--grey-240);
+      padding: 0.2rem 0.5rem;
+      font-size: 0.8rem;
+      border-radius: 0.5rem;
+      width: fit-content;
+      color: var(--grey-100);
+    }
+  }
+}
